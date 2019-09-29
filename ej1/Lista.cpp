@@ -63,32 +63,3 @@ Nodo* Lista::getUltimo(){
 	return this->ultimo;
 }
 
-Nodo* Lista::rellenar(int max){
-	
-	Nodo *tmp = new Nodo();
-	tmp->sig = NULL;
-	
-	Nodo *raiz = this->raiz;
-	Nodo *tmp2 = NULL;
-	int aux = (raiz->num)+1;
-	
-	// El ciclo funciona hasta que aux llegue hasta el ultimo valor del nodo.
-	//El siguente fragmento es el que logra rellenar, se explica en el readme.
-	while(aux != max){
-		tmp2 = raiz->sig;
-		
-		Nodo *tmp = new Nodo();
-		tmp->sig = NULL;
-		tmp->num = aux;
-		
-		if(tmp2->num != tmp->num){
-			raiz->sig = tmp;
-			tmp->sig = tmp2;
-			tmp2 = tmp;
-		}	
-		aux = aux +1;
-		raiz = raiz->sig;
-	}
-	return this->raiz;
-}
-

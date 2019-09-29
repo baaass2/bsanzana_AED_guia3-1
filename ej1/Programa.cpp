@@ -26,9 +26,8 @@ int main (void) {
     
     char stop = 'F';
     int num = 0;
-    int max = 0;
     
-    cout << "Ingresando datos a lista 1..."<<endl;
+    cout << "Ingresando datos a la lista ..."<<endl;
     while(stop != 'V'){
 		cout << "Ingrese entero a la lista: ";cin >> num;	
 		t=lista->crear(num);

@@ -16,8 +16,7 @@ class Lista {
         Lista();
         Nodo* crear (int num);
         Nodo* getUltimo();
-        Nodo* rellenar(int max);
-		void imprimir ();
+      	void imprimir ();
 
 };
 #endif
