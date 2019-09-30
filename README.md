@@ -1,2 +1,6 @@
 # bsanzana_AED_guia3-1
-guia3-1
+Se presenta guia3-1, para ejecutar los programas se debe estar en la carpeta correspondiente, abrir una terminal y escribir ./Programa.
+
+Ejercicio 1: Se logra solicitar elementos tipo int e ingresarlos a una lista enlazada, luego de obtener el elemento, se recorre para asi buscar los elementos positivos y negativos, de esa forma se crean 2 listas más, las cuales se le agregan elementos tipo int negativos o positivos correspondientemente, y todo con una inserccion ordenada.
+
+Ejercicio2 : Se logra solicitar elementos de tipo string e ingresarlos a una lista enlazada que utiliza un algoritmo de inserccion ordenada alfabeticamente, con la utilizacion de 2 arreglos los cuales, uno es el alfabeto y otro es un array de tipo int que contiene numeros de 1-26. de esta manera se analiza el elemento ingresado por el usuario, que a una letra en la posicion X de la palabra se le asignará un valor dependiendo de su letra, por ejemplo si la letra es una 'A'se le asignara el numero 1, por ende, debe ir al inicio. Por otro lado, si se encuentra con la 'Z', se le asignara el valor 26, entonces debe ir al final. Analizando el elemento raiz, ultimo, 2 nodos auxiliares (ven los elementos de al medio de la lista), se logra el orden alfabetico. Cabe destacar que, existe el caso cuando los elementos tienen letras iguales, por esto se debe ir iterando hasta encontrar una letra que diferencia a los elementos en comparacion. más aun si luego de iterar al maximo la palabra que se quiere ingresar, esta debe ir al ulitmo de la lista. 
