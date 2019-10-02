@@ -1,14 +1,15 @@
 #include <iostream>
-using namespace std;
-#ifndef POSTRE_H
-#define POSTRE_H
 
-class Postre{
+using namespace std;
+#ifndef Ingrediente_H
+#define Ingrediente_H
+
+class Ingrediente{
     private:
         string nombre = "\0";
     public:
-		Postre();
-        Postre(string nombre);
+		Ingrediente();
+        Ingrediente(string nombre);
         string getNombre();
 };
 #endif

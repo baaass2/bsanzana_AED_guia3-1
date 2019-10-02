@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string>
 using namespace std;
+#include "Postre.h"
 #include "Nodo.h"
 #include "Lista.h"
-#include "Postre.h"
-
+#include "Ingrediente.h"
 
 void imprimirLista(Nodo* tmp){
 	

@@ -5,7 +5,6 @@ using namespace std;
 
 Lista::Lista() {}
 
-
 Nodo* Lista::crear (Postre* postre) {
 	
     Nodo *tmp = new Nodo();   
