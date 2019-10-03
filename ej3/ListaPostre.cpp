@@ -1,11 +1,10 @@
 #include <iostream>
-#include "Nodo.h"
-#include "Lista.h"
+#include "ListaPostre.h"
 using namespace std;
 
-Lista::Lista() {}
+ListaPostre::ListaPostre() {}
 
-Nodo* Lista::crear (Postre* postre) {
+Nodo* ListaPostre::crear (Postre* postre) {
 	
     Nodo *tmp = new Nodo();   
     Nodo *aux = new Nodo();
@@ -107,7 +106,7 @@ Nodo* Lista::crear (Postre* postre) {
 	}
     return this->raiz;
 }
-void Lista::imprimir () {  
+void ListaPostre::imprimir () {  
 	Nodo *tmp = this->raiz;
 	
 	cout << " | ";
@@ -118,7 +117,7 @@ void Lista::imprimir () {
     cout << "" << endl;
 }
 
-void* Lista::eliminarNodo(string nombreEliminar){
+void* ListaPostre::eliminarNodo(string nombreEliminar){
 	
 	Nodo *nEliminar;
     Nodo *nAnterior = NULL;
@@ -144,7 +143,7 @@ void* Lista::eliminarNodo(string nombreEliminar){
 	}
 }
 
-int Lista::valorLetra(Nodo *tmp, int indiceStr){
+int ListaPostre::valorLetra(Nodo *tmp, int indiceStr){
 	
 	int valorLetra = 0;
 	
@@ -158,16 +157,16 @@ int Lista::valorLetra(Nodo *tmp, int indiceStr){
 	return valorLetra;
 }
 
-Nodo* Lista::getUltimo(){
+Nodo* ListaPostre::getUltimo(){
 	return this->ultimo;
 }
 
 
-Nodo* Lista::getRaiz(){
+Nodo* ListaPostre::getRaiz(){
 	return this->raiz;
 }
 
-string Lista::mayuscula(Nodo *tmp){
+string ListaPostre::mayuscula(Nodo *tmp){
 	 
 	string str = tmp->postre->getNombre();
 	

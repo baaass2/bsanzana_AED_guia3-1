@@ -1,10 +1,18 @@
 #include <iostream>
+#include "Postre.h"
 using namespace std;
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef LISTAPOSTRE_H
+#define LISTAPOSTRE_H
+
+using namespace std;
+
+typedef struct _Nodo {
+    Postre *postre;
+    struct _Nodo *sig;
+} Nodo;
 
 
-class Lista {
+class ListaPostre {
     private:
         Nodo *raiz = NULL;
         Nodo *ultimo = NULL;
@@ -13,7 +21,7 @@ class Lista {
 		int intAlfabeto[27] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26};
 		
     public:
-        Lista();
+        ListaPostre();
         Nodo* crear (Postre *postre);
         Nodo* getUltimo();
         Nodo* getRaiz();
